@@ -1,0 +1,117 @@
+.movie-detail {
+    width: 1320px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.movie-detail img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-detail-info-content h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.date-rate-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #dcdcdc;
+}
+
+.movie-genre {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.movie-actors {
+    font-size: 20px;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+
+.movie-images {
+    width: 650px;
+}
+
+@media screen and (max-width: 768px) {
+    .movie-detail {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin: 5px 0;
+    }
+
+    .movie-genre,
+    .date-rate-detail {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .movie-images,
+    .movie-overview {
+        width: 730px;
+    }
+
+    .movie-actors {
+        display: none;
+    }
+
+    .movie-detail img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .movie-detail-info-content h2 {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .movie-detail {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin: 5px 0;
+    }
+
+
+    .movie-overview {
+        width: 100%;
+    }
+
+    .movie-genre,
+    .date-rate-detail {
+        font-size: 16px;
+    }
+
+    .movie-images {
+        display: none !important;
+    }
+
+    .movie-actors {
+        display: none;
+    }
+
+    .movie-detail img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .movie-detail-info-content h2 {
+        font-size: 1.7rem;
+    }
+
+}

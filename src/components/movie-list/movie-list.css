@@ -1,0 +1,97 @@
+.top-rated-movies {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-list-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 24px 0;
+}
+
+.ant-card {
+    border: 1px solid #3e3d40;
+    background: #3e3d40;
+}
+
+.ant-card-body {
+    background-color: #3e3d40;
+}
+
+.movie-title-top {
+    color: white;
+    font-size: 20px;
+}
+
+.movie-rated-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.movie-top-rate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.movie-rated-date {
+    color: #fff;
+    background-color: #313036;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.movie-btn-rated {
+    background-color: #313036;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.movie-btn-rated-fill {
+    background-color: #313036;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-rated-movies {
+        width: 100%;
+    }
+
+    .movie-title-top {
+        font-size: 16px;
+    }
+
+    .movie-rated-date,
+    .movie-top-rate {
+        font-size: 14px;
+    }
+
+    .movie-list-title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .top-rated-movies {
+        width: 100%;
+    }
+}
